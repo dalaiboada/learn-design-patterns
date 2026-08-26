@@ -1,6 +1,6 @@
 # Design Patterns in TypeScript
 
-Repositorio personal para documentar, estudiar e implementar los diferentes patrones de diseño de software utilizando **TypeScript**.
+Repositorio para documentar, estudiar e implementar los diferentes patrones de diseño de software utilizando **TypeScript**.
 
 ## Índice de Contenidos
 
