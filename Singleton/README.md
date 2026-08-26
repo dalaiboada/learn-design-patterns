@@ -50,3 +50,7 @@ class Singleton {
 - *Enlace* [`GameSessionManager.ts`](./ejemplos/GameSessionManager.ts)
 
   Imaginemos que estamos construyendo nuestro juego RPG y necesitamos un Gestor de Partida único que controle cuántos jugadores hay conectados en el servidor y el estado global del mundo.
+
+### 2. Conexión a Base de datos (Ejemplo)
+- *Enlace* [`DatabaseConnection.ts`](./ejemplos/DatabaseConnection.ts)
+Imaginemos un Gestor de Configuración o una Conexión a Base de Datos:
