@@ -56,3 +56,32 @@ Imaginemos que estamos construyendo nuestro juego RPG y necesitamos un Gestor de
 Imaginemos un Gestor de Configuración o una Conexión a Base de Datos.
 
 - *Enlace* [`DatabaseConnection.ts`](./ejemplos/DatabaseConnection.ts)
+
+---
+## Ejercicio: El Sistema de Logros Globales (Achievements)
+[`Enlace de Solución`](./ejemplos/Achievements.ts)
+
+
+Imagina que estás desarrollando el sistema de logros y estadísticas globales para tu juego RPG. 
+
+Como los logros se desbloquean desde cualquier parte del mapa. 
+*(al derrotar enemigos, abrir cofres o terminar misiones)*
+
+Necesitas asegurarte de que exista una única instancia mundial de la clase que gestiona los logros para que no se pierda la cuenta de los puntos obtenidos por el jugador.
+
+Debes diseñar una clase llamada **GestorLogros** aplicando el Patrón Singleton.
+
+#### Requisitos de la arquitectura:
+- **1. Atributo estático privado**: Que almacene la única instancia de GestorLogros.
+
+- **2. Constructor privado**: Que inicialice una lista interna o un contador de logros desbloqueados 
+(por ejemplo, un array de strings logrosDesbloqueados: string[] o un número puntosTotales).
+
+- **3. Método estático público** (`obtenerInstancia`): Que controle la creación única del gestor.
+
+- **4. Métodos públicos** de instancia:
+    - `desbloquearLogro(nombreLogro: string): void` 
+    (debe agregar el logro a la lista y mostrar un mensaje en consola).
+
+    - `mostrarLogros(): void `
+    (debe imprimir en consola todos los logros que el jugador ha conseguido hasta el momento).
