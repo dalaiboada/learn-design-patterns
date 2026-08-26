@@ -3,6 +3,7 @@
 **Strategy** es un patrón de diseño de **comportamiento** que te permite definir una familia de algoritmos, encapsular cada uno en una clase separada y hacer que sus objetos sean intercambiables sobre la marcha.
 
 *Varias estrategias para llegar al aeropuerto.*
+
 ![Patrón Strategy](https://refactoring.guru/images/patterns/content/strategy/strategy-comic-1-es.png)
 
 
@@ -16,9 +17,7 @@ Si resuelves esto usando un bloque gigante de `if/else` o `switch` dentro de la 
 
 Sacas los **algoritmos de ataque fuera** de la clase principal y los conviertes en **clases independientes** que implementan **una interfaz común**. El personaje simplemente guarda una referencia a la estrategia actual y la ejecuta, sin importarle qué tipo de ataque sea.
 
----
-
-## 2. Estructura y Componentes
+## Estructura y Componentes
 
 1. **La Interfaz de la Estrategia (`Strategy`)**: Define el contrato común que todos los algoritmos deben cumplir (ej. `ejecutarAtaque()`).
 
@@ -28,9 +27,7 @@ Sacas los **algoritmos de ataque fuera** de la clase principal y los conviertes 
 
 [![](https://img.plantuml.biz/plantuml/svg/fL7DIWD13BuFp3laM2bRUbv4kbKF1V7I9qXdup1sToAPZDYgx-xKikil23RNxozViaYAehdlh4dR41zGi0VNOKgDgeHDLbevZkkm9vX_vcpGRRrmZgtZZWLKCAO2KLHhh0bHIUxG4QmBekHty6mDb9a2tPFB9RRfF4lGdYTdDJnoQArvFMZVu-6IenDI6lJDgGRBVnWeFUaWgu3IqIfWFTOQB1FfzGXFVcEE4Lztk64V75xHBNbsuVicu_NENsQpdpVvYx2qPcZ1LNNnyOmQSi93m89YMzx_1W00)](https://editor.plantuml.com/uml/fL7DIWD13BuFp3laM2bRUbv4kbKF1V7I9qXdup1sToAPZDYgx-xKikil23RNxozViaYAehdlh4dR41zGi0VNOKgDgeHDLbevZkkm9vX_vcpGRRrmZgtZZWLKCAO2KLHhh0bHIUxG4QmBekHty6mDb9a2tPFB9RRfF4lGdYTdDJnoQArvFMZVu-6IenDI6lJDgGRBVnWeFUaWgu3IqIfWFTOQB1FfzGXFVcEE4Lztk64V75xHBNbsuVicu_NENsQpdpVvYx2qPcZ1LNNnyOmQSi93m89YMzx_1W00)
 
----
-
-## 3. Sintaxis General (Estructura Base)
+## Sintaxis y Estructura Base
 
 ```typescript
 // 1. Interfaz común
@@ -63,8 +60,18 @@ class Contexto {
 ```
 
 ---
+## Implementación
+#### 1. Manejador de Sesión de Juego
+
+Imaginemos que estamos construyendo nuestro juego RPG y necesitamos un Gestor de Partida único que controle cuántos jugadores hay conectados en el servidor y el estado global del mundo.
+
+- *Enlace* [`CombatSystem.ts`](./ejemplos/CombatSystem.ts)
+
+---
 
 ## 🛠️ Ejercicio Práctico: El Sistema de Movimiento del RPG
+[`Enlace de Solución`](./ejemplos/MovementSystem.ts)
+
 ### Enunciado:
 
 Imagina que en tu juego RPG, los personajes pueden moverse por diferentes tipos de terreno (por ejemplo, **Terreno Normal**, **Terreno Pantanoso** o **Terreno Montañoso**). El costo de energía o la velocidad con la que se desplazan cambia radicalmente dependiendo del terreno, pero no quieres llenar la clase `Personaje` con condiciones `if/else` complejas para calcular el movimiento.
