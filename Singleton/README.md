@@ -1,4 +1,4 @@
-# Singleton
+# Singleton (Creacional)
 **También llamado**: *Instancia única*
 
 ![Patrón Singleton](https://refactoring.guru/images/patterns/content/singleton/singleton.png)
@@ -58,10 +58,10 @@ Imaginemos un Gestor de Configuración o una Conexión a Base de Datos.
 - *Enlace* [`DatabaseConnection.ts`](./ejemplos/DatabaseConnection.ts)
 
 ---
-## Ejercicio: El Sistema de Logros Globales (Achievements)
+## 🛠️ Ejercicio: El Sistema de Logros Globales (Achievements)
 [`Enlace de Solución`](./ejemplos/Achievements.ts)
 
-
+### Enunciado:
 Imagina que estás desarrollando el sistema de logros y estadísticas globales para tu juego RPG. 
 
 Como los logros se desbloquean desde cualquier parte del mapa. 
