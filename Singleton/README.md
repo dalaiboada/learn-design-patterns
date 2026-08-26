@@ -46,4 +46,7 @@ class Singleton {
 
 ---
 ## Implementación
-- [`singleton.ts`](Singleton/singleton.ts)
+#### 1. Manejador de Sesión de Juego
+- *Enlace* [`GameSessionManager.ts`](./ejemplos/GameSessionManager.ts)
+
+  Imaginemos que estamos construyendo nuestro juego RPG y necesitamos un Gestor de Partida único que controle cuántos jugadores hay conectados en el servidor y el estado global del mundo.
