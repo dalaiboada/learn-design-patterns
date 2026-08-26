@@ -4,25 +4,19 @@ interface ComportamientoAtaque {
 
 class AtaqueEspada implements ComportamientoAtaque {
     public atacar(atacante: string, objetivo: string): void {
-        console.log(`
-            ⚔️ ${atacante} arremete con su espada pesada contra ${objetivo} infligiendo daño físico.`
-        );
+        console.log(`⚔️ ${atacante} arremete con su espada pesada contra ${objetivo.toUpperCase()} infligiendo daño físico.`);
     }
 }
 
 class AtaqueArco implements ComportamientoAtaque {
     public atacar(atacante: string, objetivo: string): void {
-        console.log(`
-            🏹 ${atacante} tensa su arco y dispara una flecha precisa a la distancia contra ${objetivo}.`
-        );
+        console.log(`🏹 ${atacante} tensa su arco y dispara una flecha precisa a la distancia contra ${objetivo.toUpperCase()}.`);
     }
 }
 
 class AtaqueHechizo implements ComportamientoAtaque {
     public atacar(atacante: string, objetivo: string): void {
-        console.log(`
-            ✨ ${atacante} canaliza energía arcana y lanza un rayo mágico directo a ${objetivo}.`
-        );
+        console.log(`✨ ${atacante} canaliza energía arcana y lanza un rayo mágico directo a ${objetivo.toUpperCase()}.`);
     }
 }
 
