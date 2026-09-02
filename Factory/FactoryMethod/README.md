@@ -64,6 +64,38 @@ class CreadorA extends Creador {
 ```
 
 ---
+
+## ¿Cuándo vale la pena la complejidad extra del *Factory Method* frente a la simplicidad del *Simple Factory*?
+
+Aunque el *Simple Factory* es excelente para la gran mayoría de casos sencillos, el **Factory Method** se vuelve superior (y necesario) cuando tu aplicación crece y se enfrenta a ciertos problemas estructurales. Las razones principales por las cuales el *Factory Method* es mejor en escenarios complejos:
+
+---
+
+### 1. Cumplimiento del Principio Abierto/Cerrado (OCP - Open/Closed Principle)
+
+* **Con Simple Factory:** Cada vez que agregas un nuevo producto (ej. un `ProductoC`), **estás obligado a modificar el código existente** de la fábrica (añadir un nuevo `case` en el `switch`). Tocar código que ya funciona es riesgoso y puede introducir errores (*bugs*).
+* **Con Factory Method:** Si quieres agregar un `ProductoC`, **no tocas nada de lo anterior**. Simplemente creas tu `ProductoC` y una nueva clase `CreadorCofreC extends Creador`. Cumples la regla de oro: el código está *abierto a la extensión, pero cerrado a la modificación*.
+
+### 2. Extensibilidad de la Lógica de Negocio (Plantillas de Comportamiento)
+
+Observa que en el *Factory Method*, la clase abstracta `Creador` no solo tiene el método para fabricar, sino que tiene un método de negocio (como `ejecutarAccion()` o `abrirCofre()`) que define **cómo se usa** ese producto.
+
+* Con el *Factory Method*, todas las subclases heredan ese flujo de trabajo estándar pero pueden decidir cambiar o especializar cómo se crea la pieza clave.
+* En el *Simple Factory*, la fábrica solo suelta el objeto y te devuelves al código cliente a escribir toda la lógica de qué hacer con él, lo que puede duplicar código en distintas partes de tu aplicación.
+
+### 3. Aislamiento de Dependencias (Principio de Responsabilidad Única)
+
+* **Simple Factory** acumula todo el conocimiento del sistema en un solo lugar. Si tienes 50 tipos de ítems o enemigos diferentes, tu clase fábrica tendrá que importar las 50 clases y tener un `switch` gigantesco. Con el tiempo, esa clase se convierte en un *God Object* (un objeto que lo sabe y lo hace todo).
+* **Factory Method** reparte la responsabilidad. Cada creador concreto solo conoce y se encarga de su propio producto. El módulo que maneja bosques solo conoce el creador de bosques; el módulo de minas, el de minas.
+
+---
+
+### Resumen: ¿Cuándo usar cuál?
+
+* **Usa Simple Factory cuando:** Tienes un sistema pequeño o medianamente acotado, los tipos de objetos son estables (sabes que casi nunca vas a añadir nuevos) y solo quieres evitar repetir la palabra `new` y limpiar tus condicionales.
+* **Usa Factory Method cuando:** Estás diseñando un framework, una librería, o un sistema grande donde **esperas que otros desarrolladores (o el futuro de tu proyecto) añadan nuevos tipos de productos** constantemente sin romper el código central ya escrito.
+
+---
 ## Implementación
 #### 1.  El Generador de Monstruos del Calabozo (Dungeon Spawner)
 
