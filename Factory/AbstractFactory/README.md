@@ -146,13 +146,13 @@ Imaginemos que en nuestro RPG, al seleccionar el estilo visual o facción del pe
   - **Familia Medieval:** `EspadaMedieval` y `EscudoMedieval`.
   - **Familia Sci-Fi:** `PistolaLaser` y `EscudoDeEnergia`.
 
-* *Enlace* [`equipmentFactory.ts`](./ejemplos/equipmentFactory.ts)
+* *Enlace* [`equipmentFactory.ts`](./ejemplos/EquipmentFactory.ts)
 
 ---
 
 ## 🛠️ Ejercicio Práctico: El Sistema de Temas de Interfaz (UI Themes)
 
-[`Enlace de Solución`](./ejemplos/uiThemeFactory.ts)
+[`Enlace de Solución`](./ejemplos/UIThemeFactory.ts)
 
 ### Enunciado:
 
