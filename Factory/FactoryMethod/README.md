@@ -35,7 +35,7 @@ interface Producto {
 
 // 2. Productos concretos
 class ProductoA implements Producto {
-    ublic operacion(): string { return "Resultado del ProductoA"; }
+    public operacion(): string { return "Resultado del ProductoA"; }
 }
 
 class ProductoB implements Producto {
