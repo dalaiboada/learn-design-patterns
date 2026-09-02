@@ -42,6 +42,12 @@ class ProductoB implements Producto {
   public operacion(): string { 
     return "Resultado del ProductoB"; 
   }
+
+}
+class ProductoC implements Producto {
+  public operacion(): string { 
+    return "Resultado del ProductoC"; 
+  }
 }
 
 // 3. Fábrica (Creadora)
@@ -61,6 +67,28 @@ class CreadorA extends Creador {
   }
 }
 
+class CreadorB extends Creador {
+  public fabricarProducto(): Producto {
+    return new ProductoB();
+  }
+}
+
+class CreadorC extends Creador {
+  public fabricarProducto(): Producto {
+    return new ProductoC();
+  }
+}
+
+// cliente
+const creadorA = new CreadorA();
+creadorA.ejecutarAccion();
+
+
+const creadorB = new CreadorB();
+creadorB.ejecutarAccion();
+
+const creadorC = new CreadorC();
+creadorC.ejecutarAccion();
 ```
 
 ---
