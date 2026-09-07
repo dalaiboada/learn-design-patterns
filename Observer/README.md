@@ -5,8 +5,6 @@ Es un patrón de diseño de **comportamiento** que te permite definir un mecanis
 
 ![Patrón Observer](https://refactoring.guru/images/patterns/content/observer/observer.png)
 
-*Un suscriptor recibiendo notificaciones de sus canales favoritos.*
-
 * **¿Qué problema resuelve?**
 
 Imagina que estás construyendo un sistema de notificaciones de logros en tu juego RPG. Cada vez que el jugador sube de nivel, necesitas actualizar la interfaz gráfica de usuario (UI), reproducir un sonido de victoria, guardar la partida automáticamente en la nube y desbloquear trofeos.
@@ -83,7 +81,7 @@ class ConcreteObserver implements Observer {
 
 Supongamos que en nuestro juego queremos que varios subsistemas reaccionen automáticamente cuando la salud de un personaje cae por debajo del 20% (estado crítico): la interfaz de usuario debe mostrar una alerta roja parpadeante, la música del combate debe cambiar a una pista de tensión, y la IA del compañero de equipo debe activar modo defensivo.
 
-- *Enlace* [`GameSessionManager.ts`](./ejemplos/HealthSystemObserver.ts)
+- *Enlace* [`HealthSystemObserver.ts`](./ejemplos/HealthSystemObserver.ts)
 
 ---
 
