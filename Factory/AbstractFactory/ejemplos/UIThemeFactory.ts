@@ -70,4 +70,4 @@ const fantasyTheme = new CyberpunkThemeFactory();
 const boton = cyberpunkTheme.crearBoton();
 const panel = cyberpunkTheme.crearPanel();
 
-boton.renderizarBoton();// Enter file content here
+boton.renderizarBoton();
