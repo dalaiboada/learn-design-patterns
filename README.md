@@ -54,9 +54,9 @@ Factory/
 
 - **Abstract Factory**: Crea familias de objetos relacionados o dependientes sin especificar sus clases concretas.
 
+[Ver más...](/Factory)
+
 ### 4. Adapter
 Permite colaborar a objetos con interfaces incompatibles, sirviendo de puente o traductor entre ellos sin modificar su código original.
 
 [Ver más...](/Adapter)
-
-[Ver más...](/Factory)
