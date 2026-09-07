@@ -10,6 +10,7 @@ Repositorio para documentar, estudiar e implementar los diferentes patrones de d
     *   [Simple Factory](#3-simple-factory)
     *   [Factory Method](#4-factory-method)
     *   [Abstract Factory](#5-abstract-factory)
+*   [Adapter](#adapter)
 *   *(Próximamente más patrones...)*
 
 ---
@@ -53,5 +54,9 @@ Factory/
 
 - **Abstract Factory**: Crea familias de objetos relacionados o dependientes sin especificar sus clases concretas.
 
+### 4. Adapter
+Permite colaborar a objetos con interfaces incompatibles, sirviendo de puente o traductor entre ellos sin modificar su código original.
+
+[Ver más...](/Adapter)
 
 [Ver más...](/Factory)
