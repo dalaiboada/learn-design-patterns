@@ -6,6 +6,10 @@ Repositorio para documentar, estudiar e implementar los diferentes patrones de d
 
 *   [Singleton](#singleton)
 *   [Strategy](#strategy)
+*   [Factory (Familia de Patrones)](#factory-familia-de-patrones)
+    *   [Simple Factory](#3-simple-factory)
+    *   [Factory Method](#4-factory-method)
+    *   [Abstract Factory](#5-abstract-factory)
 *   *(Próximamente más patrones...)*
 
 ---
@@ -25,3 +29,19 @@ El patrón Strategy permite definir una familia de algoritmos, encapsular cada u
 [Ver más...](/Strategy)
 
 ---
+
+### 3. Factory (Familia de Patrones)
+El objetivo de estos patrones es desacoplar el código cliente de las clases concretas que necesita instanciar, promoviendo un diseño más limpio, mantenible y escalable.
+
+#### Estructura de la carpeta
+```text
+Factory/
+├── AbstractFactory/
+│   ├── ejemplos/
+│   └── README.md
+├── FactoryMethod/
+│   ├── ejemplos/
+│   └── README.md
+└── SimpleFactory/
+    ├── ejemplos/
+    └── README.md
