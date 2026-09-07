@@ -1,4 +1,4 @@
-# Strategy
+# Strategy (Comportamiento)
 
 **Strategy** es un patrón de diseño de **comportamiento** que te permite definir una familia de algoritmos, encapsular cada uno en una clase separada y hacer que sus objetos sean intercambiables sobre la marcha.
 
