@@ -1,4 +1,4 @@
-# Adapter
+# Adapter (Estructural)
 
 **Adapter** es un patrón de diseño **estructural** que permite colaborar a objetos con interfaces incompatibles, sirviendo de puente o traductor entre ellos sin modificar su código original.
 
