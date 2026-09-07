@@ -11,6 +11,7 @@ Repositorio para documentar, estudiar e implementar los diferentes patrones de d
     *   [Factory Method](#4-factory-method)
     *   [Abstract Factory](#5-abstract-factory)
 *   [Adapter](#adapter)
+*   [Observer](#observer)
 *   *(Próximamente más patrones...)*
 
 ---
@@ -60,3 +61,8 @@ Factory/
 Permite colaborar a objetos con interfaces incompatibles, sirviendo de puente o traductor entre ellos sin modificar su código original.
 
 [Ver más...](/Adapter)
+
+### 5. Observer
+Establece una relación de uno a muchos entre objetos, de manera que cuando un objeto (el sujeto) cambia de estado, todos sus dependientes (observadores) son notificados y actualizados automáticamente.
+
+[Ver más...](/Observer)
