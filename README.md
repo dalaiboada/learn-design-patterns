@@ -45,3 +45,13 @@ Factory/
 └── SimpleFactory/
     ├── ejemplos/
     └── README.md
+```
+
+- **Simple Factory**: Una única clase centralizada o método estático encapsula la lógica de decisión mediante condicionales (`switch`/`if`)
+
+- **Factory Method**: Define una interfaz para crear un objeto, delegando en las subclases la decisión de qué clase concreta instanciar.
+
+- **Abstract Factory**: Crea familias de objetos relacionados o dependientes sin especificar sus clases concretas.
+
+
+[Ver más...](/Factory)
