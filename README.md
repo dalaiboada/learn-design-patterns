@@ -12,6 +12,7 @@ Repositorio para documentar, estudiar e implementar los diferentes patrones de d
     *   [Abstract Factory](#5-abstract-factory)
 *   [Adapter](#adapter)
 *   [Observer](#observer)
+*   [State](#state)
 *   *(Próximamente más patrones...)*
 
 ---
@@ -66,3 +67,8 @@ Permite colaborar a objetos con interfaces incompatibles, sirviendo de puente o 
 Establece una relación de uno a muchos entre objetos, de manera que cuando un objeto (el sujeto) cambia de estado, todos sus dependientes (observadores) son notificados y actualizados automáticamente.
 
 [Ver más...](/Observer)
+
+### 5. State
+Permite a un objeto alterar su comportamiento cuando su estado interno cambia. Dicho objeto parecerá que cambia de clase.
+
+[Ver más...](/State)
