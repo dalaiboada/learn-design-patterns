@@ -68,7 +68,7 @@ Establece una relación de uno a muchos entre objetos, de manera que cuando un o
 
 [Ver más...](/Observer)
 
-### 5. State
+### 6. State
 Permite a un objeto alterar su comportamiento cuando su estado interno cambia. Dicho objeto parecerá que cambia de clase.
 
 [Ver más...](/State)
